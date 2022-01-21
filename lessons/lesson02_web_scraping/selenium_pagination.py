@@ -1,9 +1,10 @@
 import time
-from global_constants import browser
+from global_constants import get_browser
 from bs4 import BeautifulSoup
 import re
 
 URL     = "https://bpl.bc.ca/events/"
+browser = get_browser()
 browser.get(URL)
 
 # Give the browser time to load all content.

@@ -1,11 +1,12 @@
 import time
 import re
 from bs4 import BeautifulSoup
-from global_constants import browser
+from global_constants import get_browser
 from selenium.webdriver.common.by import By
 
 URL = "https://vpl.bibliocommons.com/events/search/index"
 
+browser = get_browser()
 browser.get(URL)
 
 # Give the browser time to load all content.

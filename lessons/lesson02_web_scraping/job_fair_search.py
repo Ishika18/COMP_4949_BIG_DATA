@@ -1,5 +1,5 @@
 import time
-from global_constants import browser
+from global_constants import get_browser
 from bs4 import BeautifulSoup
 import re
 
@@ -7,6 +7,7 @@ import re
 from selenium.webdriver.common.by import By
 
 URL     = "https://www.eventbrite.ca/d/canada--vancouver/job-fair/"
+browser = get_browser()
 browser.get(URL)
 
 # Give the browser time to load all content.
