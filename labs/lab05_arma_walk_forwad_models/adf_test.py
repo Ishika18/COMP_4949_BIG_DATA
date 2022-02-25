@@ -22,7 +22,7 @@ plt.show()
 # 2nd order differencing
 
 # Perform differencing.
-df = df.diff().diff()
+df = df.diff()
 
 # Plot data after differencing.
 plt.plot(df)
