@@ -15,9 +15,6 @@ nltk.download('stopwords')
 # -------------------------------------------------------------
 def removeStopWords(tokenList):
     stopWords = set(stopwords.words('english'))
-    print("#### STOP WORDS - START ####")
-    print(stopWords)
-    print("#### STOP WORDS - END####")
     shorterSentences = []  # Declare empty array of sentences.
 
     for sentence in tokenList:
