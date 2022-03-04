@@ -11,7 +11,7 @@ from   sklearn.feature_extraction.text import CountVectorizer
 #-------------------------------------------------------------
 def vectorizeList(stemmedList):
     #cv  = CountVectorizer(binary=True, ngram_range=(1, 4))
-    cv = CountVectorizer(binary=True)
+    cv = CountVectorizer(binary=True, ngram_range=(1, 4))
 
     cv.fit(stemmedList)
     X   = cv.transform(stemmedList)
