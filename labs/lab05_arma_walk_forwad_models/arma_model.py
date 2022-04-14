@@ -37,3 +37,13 @@ for ar in range(0, 5):
         model = buildModel(train, ar, 0, ma)
         title = str(ar) + "_0_" + str(ma)
         predictAndEvaluate(model, test, title)
+
+
+"""
+How to interpret p, d, q values
+The first leading model candidate is ARIMA(0,1,2). 
+The parameters for the first model candidate are p=0, d=1 and q=2.
+In other words, p=0 implies there is no (AR) autoregressive component. 
+The parameter d=1 implies first order differencing is required.
+ q=2 implies that two lags of the (MA) moving average which are used. 
+"""

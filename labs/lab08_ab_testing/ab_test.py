@@ -1,3 +1,7 @@
+"""The next step involves performing the test. This can be done using 23 observations from days when the old table
+card is used and with 23 observations from days when the new card is used. It happens that the variance for both
+distributions is the same but we will treat the variances as if they are independent so equal_var is set to False. """
+
 from scipy import stats
 old_case_count = [10, 11, 6, 18, 11, 9, 13, 9, 3, 12, 3, 13, 14, 4, 12, 8, 18, 17, 15, 18, 6, 1, 13, 9, 11, 15, 11, 7, 12, 14]
 
